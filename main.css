@@ -1,0 +1,296 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+a i{
+    color: #22A1F0;
+    font-size: 1.2rem;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+
+h4,h5,h6{
+    font-weight: 700;
+}
+
+.home-content-heading::first-letter{
+    color:#22A1F0
+}
+
+/* heading */
+
+.section-heading{
+    text-align: center;
+}
+
+.section-heading::first-letter{
+    color:#22A1F0
+}
+
+
+
+/* buttons & text */
+.bg-primary{
+    background-color: black !important;
+}
+
+.text-primary{
+    color: black;
+}
+
+.btn-primary{
+    background-color: #22A1F0 !important;
+    border-color: #22A1F0 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover{
+    background-color: transparent !important;
+    color: #22A1F0 !important;
+}
+
+/* navigation */
+
+.navbar{
+    background-color: #fafaff;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-link,
+.navbar-brand{
+    color: #0F0A0A;
+}
+
+/* about us */
+
+.about-section-heading{
+    text-align: right;
+}
+
+.about-section-heading::first-letter{
+    color: #22A1F0;
+}
+
+/* pricing */
+.pricing{
+    background-color: #22A1F0;
+}
+
+.pricing-section-heading{
+    color: #fff;
+    text-align: center;
+}
+
+.pricing.card{
+    border-radius: 0%;
+    border-top:none;
+}
+
+.promote{
+    transform: scale(1.07);
+    z-index: 1;
+}
+
+.list-unstyled{
+    border-bottom: 1px solid #22A1F0;
+}
+
+.list-unstyled>li{
+    padding: 6px 0px;
+}
+
+/* servies */
+
+.services-section-heading{
+    text-align: center;
+}
+
+.services-section-heading::first-letter{
+    color: #22A1F0;
+}
+
+.single-service{
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    transition: 0.3s;
+    padding: 30px 20px;
+    background-color: #fff;
+}
+
+.single-service::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: 0.3s;
+    width: 0;
+    height: 0;
+    background-color: #22A1F0;
+}
+
+.single-service::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    transition: 0.3s;
+    width: 0;
+    height: 0;
+    background-color: #22A1F0;
+}
+
+.single-service:hover::after,
+.single-service:hover::before{
+    width: 50%;
+    height: 2px;
+}
+
+.single-service i{
+    font-size: 1.2rem;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+
+.single-service:hover i{
+    background-color: #22A1F0;
+    color: #fff;
+    border-color: #22A1F0;
+}
+
+.single-service h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.single-service p{
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Teams */
+
+.team-card-img-top{
+    height: 300px;
+    object-fit: contain;
+    border-radius: 0;
+
+}
+
+.team-card-title{
+    text-align: center;
+}
+
+.team-paragraph{
+    text-align: center;
+}
+
+.team.card{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.team .card-body{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    background-color: #22A1F0;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.team-card:hover>.card-body{
+    bottom: 0%;
+}
+
+/* call to action */
+
+.call-to-action{
+    background-color: black;
+    color: #fff;
+}
+
+/* contact us */
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime_local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input{
+    border-color: #eee !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime_local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus{
+    box-shadow: 0 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px #000 !important;
+}
+
+/* footer */
+
+.footer{
+    background-color: #0F0A0A;
+    color: #22A1F0;
+}
+
+@media(max-width:700px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: centre;
+    }
+    body{
+        text-align: center !important;
+    }
+    .about-section-heading{
+        text-align:center;
+        margin-top: 20px;
+    }
+}
